@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>桌面运维管理指南</title>
+    <meta name="description" content="如题所述，常见OA办公桌面环境故障解答">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/helpdesk-manual/assets/css/0.styles.6fbffdbe.css" as="style"><link rel="preload" href="/helpdesk-manual/assets/js/app.9293ad9a.js" as="script"><link rel="preload" href="/helpdesk-manual/assets/js/3.7bdc21aa.js" as="script"><link rel="preload" href="/helpdesk-manual/assets/js/16.60dba2b1.js" as="script"><link rel="prefetch" href="/helpdesk-manual/assets/js/10.b9b15ebe.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/11.ad7dae27.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/12.3d1cf1ff.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/13.6835363e.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/14.40576a44.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/15.3d4b9c66.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/17.ea785b63.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/18.61ec42c7.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/19.34654199.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/20.fbafe27d.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/21.3ff0c311.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/22.1cd6da99.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/23.250dbc83.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/4.8626718f.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/5.ab0cfbc8.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/6.ac1cd167.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/7.408d17aa.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/8.833ebcb0.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/9.bbfb69e8.js"><link rel="prefetch" href="/helpdesk-manual/assets/js/vendors~docsearch.a54f74dd.js">
+    <link rel="stylesheet" href="/helpdesk-manual/assets/css/0.styles.6fbffdbe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/helpdesk-manual/" class="home-link router-link-active"><!----> <span class="site-name">桌面运维管理指南</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/helpdesk-manual/" class="nav-link">
+  跳转首页
+</a></div> <a href="https://github.com/hoochanlon/helpdesk-manual/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/helpdesk-manual/" class="nav-link">
+  跳转首页
+</a></div> <a href="https://github.com/hoochanlon/helpdesk-manual/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>OA办公</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/oa-fault/oa.html" class="sidebar-link">OA办公故障问题</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>OA网络</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/net-debug/net.html" class="sidebar-link">OA网络环境维护</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>软件故障</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/software-issue/other.html" class="sidebar-link">办公软件使用异常</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>办公硬件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/hard-bearkdown/hard.html" class="sidebar-link">硬件调试处理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>系统重装</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/sysdm-reset/cz.html" class="sidebar-link">重装系统概要</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>命令脚本</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/script/bat.html" class="active sidebar-link">批处理技巧</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/helpdesk-manual/script/bat.html#批处理应用" class="sidebar-link">批处理应用</a></li><li class="sidebar-sub-header"><a href="/helpdesk-manual/script/bat.html#可信任站点注入" class="sidebar-link">可信任站点注入</a></li><li class="sidebar-sub-header"><a href="/helpdesk-manual/script/bat.html#兼容性视图" class="sidebar-link">兼容性视图</a></li><li class="sidebar-sub-header"><a href="/helpdesk-manual/script/bat.html#主页修改" class="sidebar-link">主页修改</a></li><li class="sidebar-sub-header"><a href="/helpdesk-manual/script/bat.html#执行程序" class="sidebar-link">执行程序</a></li><li class="sidebar-sub-header"><a href="/helpdesk-manual/script/bat.html#ip修改" class="sidebar-link">IP修改</a></li><li class="sidebar-sub-header"><a href="/helpdesk-manual/script/bat.html#允许activex控件执行" class="sidebar-link">允许activeX控件执行</a></li><li class="sidebar-sub-header"><a href="/helpdesk-manual/script/bat.html#远程激活" class="sidebar-link">远程激活</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>安全防护</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/secure/trojan.html" class="sidebar-link">病毒防范处理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>信息整合</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/star/centre.html" class="sidebar-link">资料汇聚整理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>资产管理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/means/zichang.html" class="sidebar-link">资产管理技巧</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>协商沟通</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/talk/3.html" class="sidebar-link">客户、外包、驻场</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>注意事项</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/notice/support.html" class="sidebar-link">维护细节注意说明</a></li><li><a href="/helpdesk-manual/notice/law-sug.html" class="sidebar-link">外包涉及到的法律知识</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>特别篇：社会工程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/notice/interview.html" class="sidebar-link">人力资源与面试者</a></li><li><a href="/helpdesk-manual/notice/ti-analysis.html" class="sidebar-link">培训机构分析报告</a></li><li><a href="/helpdesk-manual/notice/zufang-note.html" class="sidebar-link">社会租房记录</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>致谢</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/helpdesk-manual/thanks.html" class="sidebar-link">感谢有你们在！</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p></p><div class="table-of-contents"><ul><li><a href="#批处理应用">批处理应用</a></li><li><a href="#可信任站点注入">可信任站点注入</a></li><li><a href="#兼容性视图">兼容性视图</a></li><li><a href="#主页修改">主页修改</a></li><li><a href="#执行程序">执行程序</a></li><li><a href="#ip修改">IP修改</a></li><li><a href="#允许activex控件执行">允许activeX控件执行</a></li><li><a href="#远程激活">远程激活</a><ul><li><a href="#windows">Windows</a></li><li><a href="#office">office</a></li></ul></li></ul></div><p></p> <h2 id="批处理应用"><a href="#批处理应用" class="header-anchor">#</a> 批处理应用</h2> <p>我们可以用批处理、注册表来减少我们去花费大量时间去执行重复性高的工作需求。比如说：</p> <ul><li>每台机器可信任站点及兼容视图</li> <li>每台机器IP地址的设置</li> <li>每台机器的主页设置</li> <li>每台机器点击安装多个的软件程序</li></ul> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>BAT批处理学习网站推荐：</p> <ul><li><a href="https://www.w3cschool.cn/dosmlxxsc1/wvqyr9.html" target="_blank" rel="noopener noreferrer">w3cschool-批处理教程<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://docs.30c.org/dosbat/index.html" target="_blank" rel="noopener noreferrer">Windows 批处理脚本学习教程<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://www.jb51.net/list/list_106_1.htm" target="_blank" rel="noopener noreferrer">脚本之家-批处理专栏<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <p>最好，多认识一些Python编程方面的朋友，或是自学脚本语言。因为，这样有助于完成重复性高的资产报表记录工作。</p></div> <h2 id="可信任站点注入"><a href="#可信任站点注入" class="header-anchor">#</a> 可信任站点注入</h2> <p>使用方式：将以下整段代码拷贝到记事本并将格式改为<code>.bat</code>批处理格式执行。</p> <div class="language-bat extra-class"><pre class="language-text"><code>:: 可信任站点设置
+:: 网址及地址，改写成你自己需要设置的网址及地址
+reg add &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\baidu.com\www&quot; /v http /t REG_DWORD /d 0x00000002 /f
+reg add &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\8.8.4.8&quot; /v http /t REG_DWORD /d 0x00000002 /f
+reg add &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\test.com.cn&quot; /v http /t REG_DWORD /d 0x00000002 /f
+
+:: 主页设置
+reg add &quot;HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main&quot; /v &quot;Start Page&quot; /t reg_sz /d www.google.com /f
+reg add &quot;HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main&quot; /v &quot;Default_Page_URL&quot; /t reg_sz /d www.google.com /f
+:: 主页死锁！
+reg add &quot;HKCU\Software\Policies\Microsoft\Internet Explorer\Control Panel&quot; /v HomePage /d 1 /f &gt;nul
+:: 异议！该指令用于解除死锁！
+reg delete &quot;HKCU\Software\Policies\Microsoft\Internet Explorer\Control Panel&quot; /v HomePage /f
+pause
+</code></pre></div><h2 id="兼容性视图"><a href="#兼容性视图" class="header-anchor">#</a> 兼容性视图</h2> <ul><li>首先自行手动输入兼容性视图的站点，然后<code>regedit</code>进入注册表</li> <li>找到<code>\HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\BrowserEmulation\ClearableListData</code></li> <li>选择<code>文件</code>-&gt;<code>导出</code>，即可</li></ul> <h2 id="主页修改"><a href="#主页修改" class="header-anchor">#</a> 主页修改</h2> <div class="language-bat extra-class"><pre class="language-text"><code>@echo off
+mode con lines=30 cols=60
+%1 mshta vbscript:CreateObject(&quot;Shell.Application&quot;).ShellExecute(&quot;cmd.exe&quot;,&quot;/c %~s0 ::&quot;,&quot;&quot;,&quot;runas&quot;,1)(window.close)&amp;&amp;exit
+cd /d &quot;%~dp0&quot;
+rem 上面整段代码为以管理员权限运行
+
+rem 下面整段代码为主页修改
+reg add &quot;HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main&quot; /v &quot;Start Page&quot; /t reg_sz /d &quot;www.google.com&quot; /f
+reg add &quot;HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main&quot; /v &quot;Default_Page_URL&quot; /t reg_sz /d &quot;www.google.com&quot; /f
+reg add &quot;HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main&quot; /v &quot;First Home Page&quot; /t reg_sz /d &quot;www.google.com&quot; /f
+pause
+</code></pre></div><h2 id="执行程序"><a href="#执行程序" class="header-anchor">#</a> 执行程序</h2> <div class="language-bat extra-class"><pre class="language-text"><code>:: start为执行程序 /d 是指定路径的意思
+start /d &quot;D:\Program Files\bitbeans\test1.exe&quot;
+:: 等待（延迟）10秒，按任意键可跳过等待
+timeout /t 10
+start /d &quot;D:\Program Files\bitbeans\test2.exe&quot;
+</code></pre></div><h2 id="ip修改"><a href="#ip修改" class="header-anchor">#</a> IP修改</h2> <details><summary>IP设置脚本源码</summary> <div class="language-bat extra-class"><pre class="language-text"><code>@echo off
+mode con lines=30 cols=60
+%1 mshta vbscript:CreateObject(&quot;Shell.Application&quot;).ShellExecute(&quot;cmd.exe&quot;,&quot;/c %~s0 ::&quot;,&quot;&quot;,&quot;runas&quot;,1)(window.close)&amp;&amp;exit
+cd /d &quot;%~dp0&quot;
+rem 以管理员权限运行，下面可以写你的bat代码了
+
+rem //设置变量 BG为办公缩写，SC为生产网缩写
+:: 脚本IP是随意设置的，如需使用请根据公司环境自行修改
+set NAME=&quot;以太网&quot;
+rem //以下属性值可以根据需要更改
+set ADDR_BG=10.1.2.3
+set MASK=255.255.255.0
+set GATEWAY_BG=10.1.2.1
+set DNS_BG_1=10.1.2.99
+set DNS_BG_2=10.1.2.100
+
+set ADDR_SC=172.16.1.3
+set GATEWAY_SC=172.16.1.1
+set DNS_SC_1=172.16.1.99
+set DNS_SC_2=172.16.1.100
+
+rem //以上属性依次为IP地址、子网掩码、网关、首选DNS、备用DNS
+
+echo 当前可用操作有：
+echo 1 设置为默认办公网IP
+echo 2 设置为默认生产网IP
+echo 3 手动填写办公网IP
+echo 4 手动填写生产网IP
+echo 5 退出
+echo 请选择后回车：
+set /p operate=
+if %operate%==1 goto 1
+if %operate%==2 goto 2
+if %operate%==3 goto 3
+if %operate%==4 goto 4
+if %operate%==5 goto 5
+
+
+:1
+echo 正在设置默认办公网IP，请稍等...
+rem //可以根据你的需要更改 
+echo IP地址 = %ADDR_BG%
+echo 掩码 = %MASK%
+echo 网关 = %GATEWAY_BG%
+netsh interface ipv4 set address %NAME% static %ADDR_BG% %MASK% %GATEWAY_BG% 
+echo 首选DNS = %DNS_BG_1% 
+netsh interface ipv4 set dns %NAME% static %DNS_BG_1%
+echo 备用DNS = %DNS_BG_2% 
+if &quot;%DNS_BG_2%&quot;==&quot;&quot; (echo DNS_BG_2为空) else (netsh interface ipv4 add dns %NAME% %DNS_BG_2%) 
+echo 默认办公网IP已设置！
+pause
+goto 5
+
+:2
+echo 正在设置默认生产网IP，请稍等...
+rem //可以根据你的需要更改 
+echo IP地址 = %ADDR_SC%
+echo 掩码 = %MASK%
+echo 网关 = %GATEWAY_SC%
+netsh interface ipv4 set address %NAME% static %ADDR_SC% %MASK% %GATEWAY_SC% 
+echo 首选DNS = %DNS_SC_1% 
+netsh interface ipv4 set dns %NAME% static %DNS_SC_1%
+echo 备用DNS = %DNS_SC_2% 
+if &quot;%DNS_SC_2%&quot;==&quot;&quot; (echo DNS_SC_2为空) else (netsh interface ipv4 add dns %NAME% %DNS_SC_2%) 
+echo 默认生产网IP已设置！
+pause
+goto 5
+
+
+:3
+echo 正在进行设置办公网IP，请稍等...
+rem //可以根据你的需要更改 
+
+set /p ADDR_BG=开始IP:
+echo IP地址 = %ADDR_BG%
+echo 掩码 = %MASK%
+set /p  GATEWAY_BG=网关:
+echo 网关 = %GATEWAY_BG%
+netsh interface ipv4 set address %NAME% static %ADDR_BG% %MASK% %GATEWAY_BG% 
+echo 首选DNS = %DNS_BG_1% 
+netsh interface ipv4 set dns %NAME% static %DNS_BG_1%
+echo 备用DNS = %DNS_BG_2% 
+if &quot;%DNS_BG_2%&quot;==&quot;&quot; (echo DNS2为空) else (netsh interface ipv4 add dns %NAME% %DNS_BG_2%) 
+echo 手动办公网IP已设置！
+pause
+goto 5
+
+:4
+echo 正在设置生产网IP，请稍等...
+rem //可以根据你的需要更改 
+
+set /p ADDR_SC=开始IP:
+echo IP地址 = %ADDR_SC%
+echo 掩码 = %MASK%
+set /p GATEWAY_SC=网关:
+echo 网关 = %GATEWAY_SC%
+netsh interface ipv4 set address %NAME% static %ADDR_SC% %MASK% %GATEWAY_SC% 
+echo 首选DNS = %DNS_SC_1% 
+netsh interface ipv4 set dns %NAME% static %DNS_SC_1%
+echo 备用DNS = %DNS_SC_2% 
+if &quot;%DNS_SC_2%&quot;==&quot;&quot; (echo DNS2为空) else (netsh interface ipv4 add dns %NAME% %DNS_SC_2%) 
+echo 手动生产网IP已设置！
+pause
+goto 5
+
+:4
+exit
+</code></pre></div></details> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>运行指令小技巧</p> <ul><li>卸载程序 <code>appwiz.cpl</code></li> <li>打开控制面板 <code>control</code></li> <li>打开系统面板 <code>win</code> + <code>pause break</code> 键</li> <li>打开系统属性 <code>sysdm.cpl</code></li> <li>计算机概况
+<ul><li>图形化 <code>msinfo32</code></li> <li>字符化 <code>systeminfo</code></li></ul></li> <li>任务管理器 <code>taskmgr</code></li> <li>windows 版本 <code>winver</code></li> <li>powershell查看硬盘类型及状态 <code>get-physicaldisk</code></li> <li>开关机以及重启
+<ul><li><code>shutdown -s -t 0</code> 立马关机</li> <li><code>shutdown -r</code> 重启计算机</li> <li><code>shutdown -a</code> 取消关机任务</li></ul></li></ul></div> <h2 id="允许activex控件执行"><a href="#允许activex控件执行" class="header-anchor">#</a> 允许activeX控件执行</h2> <ul><li>DWORD值有 0、1 或 3。0为允许、1为提示、3则禁止；1208为设置效果的对应值。</li> <li><code>Zones\2</code> 2值为受信任站点区域的相关设置</li></ul> <div class="language- extra-class"><pre class="language-text"><code>:: 允许以前未使用的 ActiveX 控件在没有提示的情况下运行 
+reg add &quot;HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2&quot; /v &quot;1208&quot; /t REG_DWORD /d 0 /f
+</code></pre></div><p>参考文献：</p> <ul><li><a href="http://www.jeepxie.net/article/343236.html" target="_blank" rel="noopener noreferrer">jeepxie-IE配置注册表对应值，WebBrowser中启用禁用ActiveX<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://www.360doc.com/document/18/0702/16/25799332_767124976.shtml" target="_blank" rel="noopener noreferrer">360doc-通过注册表修改IE的Internet选项<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://www.cnblogs.com/linyijia/p/3680468.html" target="_blank" rel="noopener noreferrer">cnblog-添加信任站点和允许ActiveX批处理<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="远程激活"><a href="#远程激活" class="header-anchor">#</a> 远程激活</h2> <h3 id="windows"><a href="#windows" class="header-anchor">#</a> Windows</h3> <blockquote><p>选自 <a href="https://03k.org/kms.html" target="_blank" rel="noopener noreferrer">零散坑知识分享-一句命令激活<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <p>kms激活的前提是你的系统是批量授权版本，即VL版，一般企业版都是VL版；专业版有零售和VL版，家庭版旗舰版OEM版等等那就肯定不能默认直接用kms激活。</p> <div class="language-bat extra-class"><pre class="language-text"><code>:: kms服务器地址设置（set kms）为kms.03k.org
+slmgr /skms kms.03k.org
+:: 执行激活
+slmgr /ato
+</code></pre></div><h3 id="office"><a href="#office" class="header-anchor">#</a> office</h3> <p>进入office安装源目录执行</p> <div class="language-bat extra-class"><pre class="language-text"><code>cscript ospp.vbs /sethst:kms.03k.org
+cscript ospp.vbs /act
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>相关远程激活站点：</p> <ul><li><a href="https://kms.library.hk/" target="_blank" rel="noopener noreferrer">kms激活服务-一键激活<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://v0v.bid/" target="_blank" rel="noopener noreferrer">Windows系统一句命令激活<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://kms.cangshui.net/" target="_blank" rel="noopener noreferrer">cangshui-一键激活Windows和office脚本<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://kms.zym.com/" target="_blank" rel="noopener noreferrer">kms.zym-kms激活服务<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/helpdesk-manual/sysdm-reset/cz.html" class="prev">
+        重装系统概要
+      </a></span> <span class="next"><a href="/helpdesk-manual/secure/trojan.html">
+        病毒防范处理
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/helpdesk-manual/assets/js/app.9293ad9a.js" defer></script><script src="/helpdesk-manual/assets/js/3.7bdc21aa.js" defer></script><script src="/helpdesk-manual/assets/js/16.60dba2b1.js" defer></script>
+  </body>
+</html>
